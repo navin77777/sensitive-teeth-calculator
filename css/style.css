@@ -145,6 +145,14 @@ input[type="radio"]:hover {
   cursor: pointer;
 }
 
+.qOne {
+  align-items: center; margin-left: 5%; margin-top: 10px;
+}
+
+.qTwo {
+  margin-left: 50px; margin-top: 10px
+}
+
 @media only screen and (max-width: 600px) {
   body {
     margin: 0;
@@ -212,5 +220,13 @@ input[type="radio"]:hover {
     right: -20px;
     top: 0;
     border-left: 20px solid red;
+  }
+  .qOne {
+    align-items: center; margin-left: 5%; margin-top: 10px;
+    font-size: 0.8rem;
+  }
+
+  .qTwo {
+     margin-top: 10px;
   }
 }
