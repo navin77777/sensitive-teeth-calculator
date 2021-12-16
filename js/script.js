@@ -349,7 +349,12 @@ function Calculate() {
   }
 
   let score = document.querySelector(".score");
-  score.innerHTML = result;
+
+  if (result < 8) {
+    score.innerHTML = result;
+  } else {
+    score.innerHTML = "No Score";
+  }
 
   if (result <= 4) {
     document.querySelector(".modal-text").innerHTML =
