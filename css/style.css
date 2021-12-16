@@ -153,7 +153,7 @@ input[type="radio"]:hover {
   margin-left: 50px; margin-top: 10px
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   body {
     margin: 0;
     padding: 0;
@@ -165,12 +165,12 @@ input[type="radio"]:hover {
   }
 
   .logoImg img {
-    width: 50%;
+    width: 30%;
     margin: 1.5rem;
   }
 
   .container {
-    width: 90%;
+    width: 100%;
     height: 70%;
 
     border-radius: 15px;
@@ -221,6 +221,26 @@ input[type="radio"]:hover {
     top: 0;
     border-left: 20px solid red;
   }
+
+  .btn-box {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+  }
+
+
+  .forms button {
+    width: 90px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
   .qOne {
     align-items: center; margin-left: 5%; margin-top: 10px;
     font-size: 0.8rem;
