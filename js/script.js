@@ -227,7 +227,6 @@ back6.onclick = function () {
 };
 
 document.querySelector(".hideText").style.visibility = "hidden";
-document.querySelector("#q7").style.visibility = "hidden";
 
 function Calculate() {
   let result = 0;
