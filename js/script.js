@@ -348,15 +348,18 @@ function Calculate() {
     result = result + 20;
   }
 
+  let score = document.querySelector(".score");
+  score.innerHTML = result;
+
   if (result <= 4) {
     document.querySelector(".modal-text").innerHTML =
-      "<span style='color: #5225B5; font-size: 1.5rem; font-weight: 700'>Congratulations!</span> You do not have sensitive teeth. Continue your oral hygiene routine to avoid teeth sensitivity and other oral conditions.  <br />";
+      "You have the Advantage against Sensitive teeth";
   } else if (result == 5.0 || result == 4.5 || result == 5.5) {
     document.querySelector(".modal-text").innerHTML =
-      "<span style='color: #5225B5; font-size: 1.5rem; font-weight: 700'>Right now, </span> you do not have sensitive teeth, but may develop soon. To prevent this, use <span style='font-size: 1.5rem; font-weight: 700; color: #FF6F61'>Vantej</span> and say goodbye to sensitive teeth. ";
+      "Consult a Dentist and get the Advantage for your sensitive teeth";
   } else if (result > 5 && result <= 10) {
     document.querySelector(".modal-text").innerHTML =
-      " <span style='color: #5225B5; font-size: 1.5rem; font-weight: 700'> Ouch!</span>  You have sensitive teeth. You need to use <span style='font-size: 1.5rem; font-weight: 700; color: #FF6F61'> Vantej </span> to help reduce sensitivity. However, do consult a dentist for more recommendations.";
+      "Consult a Dentist and get the Advantage for your sensitive teeth";
   } else {
     document.querySelector(".modal-text").innerHTML =
       "<span style='color:red'>Please answer all the questions.</span>";
